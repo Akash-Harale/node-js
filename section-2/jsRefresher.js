@@ -1,0 +1,1 @@
+// These seciton is for the students who don't know about javascript.
