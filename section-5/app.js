@@ -29,6 +29,11 @@ app.use((req, res, next) => {
 // after sending a response the request will end there only and if there are any other
 // middlwares after that then the request will not reach there.
 
-const server = http.createServer(app);
+app.listen(3000);
 
-server.listen(3000);
+//we have removed all code of creating a server because app.listen create a
+// server internally by running the same code which we were runnning. i.e
+
+// const server=http.createServer(app);
+// server.listen(3000);
+
