@@ -44,6 +44,6 @@ module.exports = {
   handler: requestHandler,
 };
 // or
-module.exports.handler = requestHandler;
+// module.exports.handler = requestHandler;
 // or
-exports.handler = requestHandler;
+// exports.handler = requestHandler;
