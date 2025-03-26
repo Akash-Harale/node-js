@@ -11,8 +11,15 @@ app.use((req, res, next) => {
 
 app.use((req, res, next) => {
   console.log("In this second middleware");
-  res.send("<h1>Hello from Express!</h1>"); // If you don't call next(), the request will be stopped here and you have to provide a response.
+  res.send("<h1>Hello from Express!</h1>"); 
 });
 
-const server = http.createServer(app);
-server.listen(3000);
+
+// const server = http.createServer(app);
+// server.listen(3000);
+
+//  OR
+
+app.listen(3000, () => {
+  console.log("Server is running on port 3000");
+}); 
